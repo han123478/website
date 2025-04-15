@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perkenalan Diri</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background: #0a0a0a; /* Deep black background for luxurious look */
+            color: #fefefe; /* Light text color */
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #1d1d1d; /* Darker background */
+            padding: 20px;
+        }
+
+        header .logo h1 {
+            font-size: 2.8rem;
+            color: #d4af37; /* Gold metallic color */
+            letter-spacing: 3px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 30px;
+        }
+
+        nav ul li a {
+            color: #fefefe; /* Light text for links */
+            text-decoration: none;
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #d4af37; /* Gold metallic hover effect */
+        }
+
+        #hero {
+            background: url('https://via.placeholder.com/1500') no-repeat center center/cover;
+            height: 80vh;
+            color: #fefefe;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            background-size: cover;
+        }
+
+        #hero .hero-content h2 {
+            font-size: 5rem;
+            margin-bottom: 20px;
+            text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.6); /* Deep shadow for emphasis */
+        }
+
+        #hero .cta-btn {
+            background-color: #d4af37; /* Gold metallic */
+            color: #fff;
+            padding: 20px 40px;
+            font-size: 1.8rem;
+            border: none;
+            cursor: pointer;
+            border-radius: 50px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        #hero .cta-btn:hover {
+            background-color: #b68b3c; /* Slightly darker gold */
+            transform: translateY(-5px); /* Lift effect */
+        }
+
+        section {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .about-section {
+            background: #2b2b2b; /* Dark grey with a luxurious touch */
+            color: #fefefe;
+        }
+
+        .about-content img {
+            border-radius: 50%;
+            width: 350px;
+            height: 350px;
+            margin-bottom: 30px;
+            border: 8px solid #d4af37; /* Gold border for the profile picture */
+        }
+
+        .skills-section {
+            background: #212121; /* Deep, dark background for contrast */
+            color: #fefefe;
+        }
+
+        .skills-list {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+
+        .skill-card {
+            background: #333333; /* Dark grey background */
+            padding: 40px;
+            border-radius: 12px;
+            width: 250px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .skill-card h3 {
+            color: #d4af37; /* Gold color for skill titles */
+        }
+
+        .skill-card:hover {
+            transform: translateY(-10px);
+            background: #d4af37; /* Gold background on hover */
+            color: #fff; /* White text */
+        }
+
+        .contact-section {
+            background: #1a1a1a; /* Rich black background */
+            color: #fefefe;
+        }
+
+        form input, form textarea {
+            width: 80%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            border: 2px solid #ddd;
+            background: #2d2d2d;
+            color: #fff;
+            font-size: 1.2rem;
+        }
+
+        form button {
+            width: 80%;
+            padding: 20px;
+            background-color: #d4af37; /* Gold color */
+            border: none;
+            color: #fff;
+            border-radius: 10px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        form button:hover {
+            background-color: #b68b3c; /* Darker gold on hover */
+        }
+
+        footer {
+            background: #121212; /* Dark footer */
+            text-align: center;
+            padding: 20px;
+            color: #fefefe;
+            font-size: 1.2rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <h1>Perkenalan Diri</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">Tentang Saya</a></li>
+                    <li><a href="#skills">Diri Saya</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="hero">
+            <div class="hero-content">
+                <h2>Selamat Datang di Website Saya</h2>
+                <p>Halo! Nama saya Fein Siga Sawa Keli, seorang pelajar yang sedang menempuh pendidikan di Smkn 2 Ende. Saya memiliki minat besar dalam bidang teknologi dan terus belajar untuk mengembangkan keterampilan saya, khususnya di dunia digital dan pemrograman. Selain belajar di sekolah, saya juga senang mengeksplorasi hal-hal baru seperti desain web, coding, dan pengembangan diri. Saya percaya bahwa belajar adalah proses seumur hidup, dan saya selalu bersemangat untuk menghadapi tantangan baru dan tumbuh menjadi pribadi yang lebih baik..</p>
+                <button class="cta-btn" onclick="scrollToSection('about')">Pelajari Lebih Lanjut</button>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2>Tentang Saya</h2>
+            <div class="about-content">
+            
+                <p></p>
+                <p> Saya sekarang pelajar di SMKN 2 ENDE , dan saya sekarang Dikelas 11, diSMKN 2 ENDE saya mengambil jurusan Teknik Komputer Jaringan karna suka tentang hal komputer ,demi meningkatkan skill saya maka saya mengambil jurusan teknik komputer di SMKN 2 ENDE</p>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section">
+            <h2>Diri Saya</h2>
+            <div class="skills-list">
+                <div class="skill-card">
+                    <h3>Tempat Tanggal Lahir</h3>
+                    <p>Ende,17 Mei 2008</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Alamat</h3>
+                    <p>Jalan Woloare b,cabang Smandu</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Sosial Media</h3>
+                    <p>Instagram:Feink12</p>
+                    <p>Facebook:FeinKeli</p>
+                    <p>Telepon:08123478920</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Kontak Saya</h2>
+            <form>
+                <input type="text" placeholder="Nama" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Pesan" required></textarea>
+                <button type="submit">Kirim Pesan</button>
+            </form>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Perkenalan Diri | Semua Hak Dilindungi</p>
+        </footer>
+    </div>
+
+    <script>
+        // Smooth scroll untuk navigasi
+        function scrollToSection(sectionId) {
+            document.querySelector(`#${sectionId}`).scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    </script>
+</body>
+</html>
